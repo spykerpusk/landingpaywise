@@ -22,10 +22,80 @@ h1 {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: inline-block;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.submit-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .social-links {
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .social-icon {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .submit-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin: 0 1rem;
+        margin-top: 1.5rem;
     }
 }
